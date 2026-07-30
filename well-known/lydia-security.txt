@@ -1,0 +1,6 @@
+Contact: mailto:bugbounty@lydia-app.com
+Expires: 2025-07-26T00:00:00.000Z
+Encryption: https://lydia-app.com/pgp-public-key.txt
+Preferred-Languages: en, fr
+Canonical: https://lydia-app.com/.well-known/security.txt
+Hiring: https://lydia-app.com/en/company/jobs

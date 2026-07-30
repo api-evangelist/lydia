@@ -1,0 +1,20 @@
+generated: '2026-07-20'
+method: searched
+source: live probe of /.well-known/ on Lydia hosts
+host: https://lydia-app.com
+documents:
+- path: /.well-known/security.txt
+  status: 200
+  file: lydia-security.txt
+- path: /.well-known/openid-configuration
+  status: 404
+  note: host returns SPA 404 HTML with 200 status; not a real document
+- path: /.well-known/oauth-authorization-server
+  status: 404
+  note: host returns SPA 404 HTML with 200 status; not a real document
+- path: /.well-known/api-catalog
+  status: 404
+  note: host returns SPA 404 HTML with 200 status; not a real document
+- path: /.well-known/ai-plugin.json
+  status: 404
+  note: host returns SPA 404 HTML with 200 status; not a real document
