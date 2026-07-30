@@ -1,7 +1,23 @@
 aid: lydia
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/lydia.png
 name: Lydia
-description: 'Lydia is a company surfaced as a portfolio company of accel and added to the API Evangelist
-  network as a stub for enrichment. Sector: payments. This profile is a lead awaiting the enrichment pipeline.'
+description: 'Lydia is a French fintech, founded in 2013, that built one of Europe''s most popular
+  mobile peer-to-peer payments apps, letting users send money, split bills, and pay merchants from their
+  phone. Backed by Accel, Tencent and others, the company evolved into a full mobile banking and financial
+  services provider. In 2024 it split its consumer banking product into a new brand, Sumeria (sumeria.eu),
+  while the Lydia name continues for the P2P payments experience. Lydia publishes a security.txt bug-bounty
+  contact but no longer exposes a public developer API or portal.'
 url: https://raw.githubusercontent.com/api-evangelist/lydia/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,10 +27,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Payments
+- Fintech
+- Mobile Payments
+- Peer-to-Peer
+- Banking
+- Neobank
+- France
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,5 +44,23 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: VulnerabilityDisclosure
+  url: security/lydia-vulnerability-disclosure.yml
+- type: Security
+  url: https://lydia-app.com/.well-known/security.txt
+- type: SecurityTxt
+  url: well-known/lydia-security.txt
+- type: WellKnown
+  url: well-known/lydia-well-known.yml
+- type: DomainSecurity
+  url: security/lydia-domain-security.yml
 - type: Website
   url: https://lydia-app.com/
+- type: Website
+  url: https://sumeria.eu/
+
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 4
+  pass: local-v1
